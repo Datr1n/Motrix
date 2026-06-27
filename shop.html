@@ -1,0 +1,500 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motrix | Produse</title>
+    <link rel="icon" type="image/png" href="./Assets/Logo/Logo.png">
+    <link rel="stylesheet" href="./Css/shop.css">
+</head>
+
+<body>
+
+
+    <section class="hero">
+
+        <img class="hero-bg" src="./Assets/Img/Shop-hero bg.webp" alt="Hero Background">
+
+        <nav class="navbar">
+            <div class="container">
+
+                <div class="logo">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./Assets/Logo/Logo.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="menu">
+                    <li><a href="./index.html">Acasă</a></li>
+                    <li><a href="./shop.html" class="active">Produse</a></li>
+                    <li><a href="./about.html">Despre noi</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+
+                <div class="actions">
+
+                    <div class="icon-wrapper">
+                        <img src="./Assets/Icons/search.png" alt="">
+                    </div>
+
+                    <div class="icon-wrapper">
+                        <a href="./login.html"><img src="./Assets/Icons/user.png" alt=""></a>
+                    </div>
+
+                    <div class="icon-wrapper">
+                        <div class="rectangle" id="cart-badge">0</div>
+                        <a href="./checkout.html"><img src="./Assets/Icons/cart.png" alt=""></a>
+                    </div>
+
+                    <button class="hamburger" aria-label="Meniu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="container hero-content">
+
+            <div class="hero-left">
+
+                <div class="hero-badge">
+                    <img src="./Assets/Icons/Light.png" alt=""> PIESE DE PERFORMANȚĂ
+                </div>
+
+                <h1>
+                    MAGAZIN <span>PIESE PREMIUM</span>
+                </h1>
+
+                <div class="hero-line"></div>
+
+                <p>
+                    Explorează peste 80.000 de piese auto premium
+                    pentru performanță și întreținere.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="shop-section">
+
+        <div class="container">
+
+
+            <div class="filter-wrapper">
+
+                <div class="left-filter">
+
+                    <p class="filter">Filtrat după</p>
+
+                    <p class="clear" id="clear-filters">Șterge tot</p>
+
+                    <div class="type">
+
+                        <img src="./Assets/Icons/row.png" alt="">
+                        <img src="./Assets/Icons/column.png" alt="">
+
+                        <svg width="3" height="20" viewBox="0 0 3 20" fill="none">
+                            <path d="M2.75 0L2.75 19.25H0L0 0H2.75Z" fill="black" />
+                        </svg>
+
+                        <p class="filter-text" id="results-count">
+                            Se afișează 0-0 din 0 rezultate
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <button class="filter-toggle-btn" aria-label="Deschide filtre">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 6H20M8 12H16M11 18H13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    Filtre
+                </button>
+
+                <select class="sort-select">
+                    <option>Sortează: Popularitate</option>
+                    <option>Sortează: Cele mai noi</option>
+                    <option>Sortează: Preț</option>
+                </select>
+
+            </div>
+
+
+            <div class="shop-layout">
+
+
+                <aside class="shop-sidebar">
+
+                    <div class="filter-block">
+
+                        <button class="filter-header">
+                            <p class="catrgory-name">Categorii</p>
+                            <p class="catrgory-name">-</p>
+                        </button>
+
+                        <div class="filter-content">
+
+                            <ul class="category-list">
+
+                                <li class="active" data-category="Toate">
+                                    Toate categoriile
+                                </li>
+
+                                <li data-category="Frana">
+                                    Frâne
+                                    <span>(128)</span>
+                                </li>
+
+                                <li data-category="Piese motor">
+                                    Piese motor
+                                    <span>(342)</span>
+                                </li>
+
+                                <li data-category="Suspensie">
+                                    Suspensie
+                                    <span>(187)</span>
+                                </li>
+
+                                <li data-category="Filtre">
+                                    Filtre
+                                    <span>(96)</span>
+                                </li>
+                                <li data-category="Iluminare">
+                                    Iluminare
+                                    <span>(74)</span>
+                                </li>
+                                <li data-category="Esapament">Eșapament
+                                    <span>(63)</span>
+                                </li>
+                                <li data-category="Interior">Interior
+                                    <span>(58)</span>
+                                </li>
+                                <li data-category="Coding">Coding
+                                    <span>(41)</span>
+                                </li>
+                                <li data-category="Transmisie">Transmisie
+                                    <span>(39)</span>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <div class="filter-block">
+
+                        <button class="filter-header">
+                            <p class="catrgory-name">INTERVAL PREȚ</p>
+                            <p class="accordion-icon">−</p>
+                        </button>
+
+                        <div class="filter-content">
+
+                            <input type="range" min="10" max="15000" value="5000" id="price-range">
+
+                            <div class="range-values">
+                                <p class="filter-amount" id="price-min">$10</p>
+                                <p class="filter-amount" id="price-max">$15000</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="filter-block active" id="filter-brand">
+
+                        <button class="filter-header">
+                            <p class="catrgory-name">BRAND</p>
+                            <p class="accordion-icon">−</p>
+                        </button>
+
+                        <div class="filter-content">
+
+                            <label class="checkbox">
+                                <input type="checkbox" checked data-brand="Brembo">
+                                <p class="filter-amount">Brembo
+                                    <span>(39)</span>
+                                </p>
+                            </label>
+
+                            <label class="checkbox">
+                                <input type="checkbox" data-brand="Bosch">
+                                <p class="filter-amount">Bosch
+                                    <span>(45)</span>
+                                </p>
+                            </label>
+
+                            <label class="checkbox">
+                                <input type="checkbox" data-brand="Valeo">
+                                <p class="filter-amount">Valeo
+                                    <span>(28)</span>
+                                </p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" data-brand="Bosch">
+                                <p class="filter-amount">Bosch
+                                    <span>(26)</span>
+                                </p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" data-brand="Magna">
+                                <p class="filter-amount">Magna
+                                    <span>(21)</span>
+                                </p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" data-brand="Mann Filter">
+                                <p class="filter-amount">Mann Filter
+                                    <span>(18)</span>
+                                </p>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" data-brand="NGX">
+                                <p class="filter-amount">NGX
+                                    <span>(16)</span>
+                                </p>
+                            </label>
+
+                        </div>
+
+                        <div class="show-more-wrapper">
+                            <p class="show-title">Arată mai mult</p>
+                            <img src="./Assets/Icons/down arrow.png" alt="">
+                        </div>
+
+
+                    </div>
+
+                    <div class="filter-block active">
+
+                        <button class="filter-header">
+                            <p class="catrgory-name">DISPONIBILITATE</p>
+                            <p class="accordion-icon">−</p>
+                        </button>
+
+                        <div class="filter-content">
+
+                            <label class="checkbox">
+                                <input type="checkbox" data-type="availability" data-value="in-stock">
+                                <p class="filter-amount">În stoc
+                                    <span>(890)</span>
+                                </p>
+                            </label>
+
+                            <label class="checkbox">
+
+                                <input type="checkbox" data-type="availability" data-value="out-of-stock">
+                                <p class="filter-amount">
+                                    Stoc epuizat
+                                    <span>(29)</span>
+                                </p>
+
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="btn-hero" id="apply-filters">Aplică filtre
+                        <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.15 13H5C4.71667 13 4.47934 12.904 4.288 12.712C4.09667 12.52 4.00067 12.2827 4 12C3.99934 11.7174 4.09534 11.48 4.288 11.288C4.48067 11.096 4.718 11 5 11H16.15L13.3 8.15002C13.1 7.95002 13.004 7.71669 13.012 7.45002C13.02 7.18336 13.116 6.95002 13.3 6.75002C13.5 6.55002 13.7377 6.44602 14.013 6.43802C14.2883 6.43002 14.5257 6.52569 14.725 6.72502L19.3 11.3C19.4 11.4 19.471 11.5084 19.513 11.625C19.555 11.7417 19.5757 11.8667 19.575 12C19.5743 12.1334 19.5537 12.2584 19.513 12.375C19.4723 12.4917 19.4013 12.6 19.3 12.7L14.725 17.275C14.525 17.475 14.2877 17.571 14.013 17.563C13.7383 17.555 13.5007 17.4507 13.3 17.25C13.1167 17.05 13.0207 16.8167 13.012 16.55C13.0033 16.2834 13.0993 16.05 13.3 15.85L16.15 13Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+
+                </aside>
+
+                <div class="shop-overlay"></div>
+
+                <div class="shop-content">
+
+                    <div class="products-grid">
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="pagination">
+
+        <div class="page-number active">1</div>
+        <div class="page-number">2</div>
+        <div class="page-number">3</div>
+
+        <div class="page-dots">...</div>
+
+        <div class="page-number">37</div>
+
+        <button class="page-next">
+            <svg viewBox="0 0 24 24" fill="none">
+                <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+
+                <div class="footer-brand">
+
+                    <img class="footer-logo" src="./Assets/Logo/Light_Logo.png" alt="Motrix Logo">
+
+                    <p class="footer-tagline">
+                        <span>Piese auto</span> PREMIUM ȘI PERFORMANȚĂ
+                    </p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" class="social-btn">
+                            <img src="./Assets/Icons/tiktok.png" alt="">
+                        </a>
+
+                        <a href="#" class="social-btn">
+                            <img src="./Assets/Icons/youtube.png" alt="">
+                        </a>
+
+                        <a href="#" class="social-btn">
+                            <img src="./Assets/Icons/instagram.png" alt="">
+                        </a>
+
+                        <a href="#" class="social-btn">
+                            <img src="./Assets/Icons/telegram.png" alt="">
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>MENIU</h4>
+
+                    <ul>
+                        <li><a href="#">Acasă</a></li>
+                        <li><a href="#">Produse</a></li>
+                        <li><a href="#">Despre noi</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                </div>
+
+
+
+                <div class="footer-column">
+
+                    <h4>SERVICIU CLIENȚI</h4>
+
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Livrare</a></li>
+                        <li><a href="#">Returnări</a></li>
+                        <li><a href="#">Urmărește comanda</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>INFORMAȚII</h4>
+
+                    <ul>
+                        <li><a href="#">Politica de confidențialitate</a></li>
+                        <li><a href="#">Termeni și condiții</a></li>
+                        <li><a href="#">Politica de returnare</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>CONTACTEAZĂ-NE</h4>
+
+                    <ul>
+                        <li>Moldova, Chișinău</li>
+                        <li>+373(69)-30-22-43</li>
+                        <li>support@motrix.md</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 MOTRIX. Toate drepturile rezervate.
+                    |
+                    <a href="#">Politica de confidențialitate</a>
+                    |
+                    <a href="#">Termeni și condiții</a>
+                    |
+                    <a href="#">Cookie-uri</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <div id="toast" class="toast show hidden">
+        <div class="toast-icon">✓</div>
+        <div class="toast-content">
+            <p class="toast-title">Succes</p>
+            <p class="toast-message">Produsul a fost adăugat în coș.</p>
+        </div>
+    </div>
+
+    <div class="toast toast-error hidden">
+        <div class="toast-icon">✕</div>
+        <div class="toast-content">
+            <p class="toast-title">Eroare</p>
+            <p class="toast-message">Acest produs nu este disponibil momentan.</p>
+        </div>
+    </div>
+
+<script src="./js/products-data.js"></script>
+<script src="./js/toast-system.js"></script>
+<script src="./js/product-manager.js"></script>
+<script src="./js/render-products.js"></script>
+<script src="./js/cart-manager.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/products-page.js"></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motrix | Autentificare</title>
+    <link rel="icon" type="image/png" href="./Assets/Logo/Logo.png">
+    <link rel="stylesheet" href="./Css/login.css">
+</head>
+
+<body>
+
+    <section class="hero">
+
+        <nav class="navbar">
+            <div class="container">
+
+                <div class="logo">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./Assets/Logo/Logo.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="menu">
+                    <li><a href="./index.html">Acasă</a></li>
+                    <li><a href="./shop.html">Produse</a></li>
+                    <li><a href="./about.html">Despre noi</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+
+                <div class="actions">
+
+                    <div class="icon-wrapper">
+                        <img src="./Assets/Icons/search.png" alt="">
+                    </div>
+
+                    <div class="icon-wrapper">
+                        <a href="./login.html"><img src="./Assets/Icons/user.png" alt=""></a>
+                    </div>
+
+
+                    <div class="icon-wrapper">
+                        <div class="rectangle" id="cart-badge">0</div>
+                        <a href="./checkout.html"><img src="./Assets/Icons/cart.png" alt=""></a>
+                    </div>
+
+                    <button class="hamburger" aria-label="Meniu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                </div>
+
+            </div>
+        </nav>
+    </section>
+
+    <section class="login-section">
+
+        <div class="login-left">
+
+            <div class="hero-badge">
+                <img src="./Assets/Icons/Light.png" alt="">
+                Acces membru premium
+            </div>
+
+            <img class="login-image" src="./Assets/Img/Login bg.webp" alt="">
+
+            <div class="image-cut"></div>
+
+            <div class="separator">
+
+                <svg class="separator-yellow" viewBox="0 0 73 976" preserveAspectRatio="none" fill="none">
+                    <path d="M70.5596 0L2.05957 401.5L70.5596 594.249V976" stroke="#F7C601" stroke-width="4" />
+                </svg>
+
+                <svg class="separator-gray" viewBox="0 0 73 976" preserveAspectRatio="none" fill="none">
+                    <path d="M70.5596 0L2.05957 401.5L70.5596 594.249V976" stroke="#BDBDBD" stroke-width="2" />
+                </svg>
+
+            </div>
+
+        </div>
+
+        <div class="login-right">
+
+            <div class="login-content">
+
+                <div class="title-wrapper">
+                    <h2 class="login-title">
+                        BINE AI <span>REVENIT</span>
+                    </h2>
+
+                    <div class="title-line"></div>
+
+                    <p class="login-subtitle">
+                        Autentifică-te pentru a-ți accesa contul
+                        <br>
+                        și continuă-ți călătoria în performanță.
+                    </p>
+                </div>
+
+                <form>
+                    <div class="label-wrappers">
+                        <div class="label-wrapper">
+                            <label class="form-label">
+                                ADRESA DE EMAIL
+                            </label>
+
+                            <div class="input-group">
+
+                                <img src="./Assets/Icons/mail_black.png" alt="">
+
+                                <input type="email" placeholder="tu@exemplu.com" id="login-email">
+
+                            </div>
+                        </div>
+
+                        <div class="label-wrapper">
+                            <label class="form-label">
+                                PAROLĂ
+                            </label>
+
+                            <div class="input-group">
+
+                                <img src="./Assets/Icons/lock.png" alt="">
+
+                                <input type="password" placeholder="************" id="login-password">
+
+                                <button type="button" class="eye-btn">
+                                    <img src="./Assets/Icons/eye.png" alt="">
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-options">
+
+                        <label class="remember">
+
+                            <input type="checkbox">
+
+                            <p class="remember">ȚINE-MĂ MINTE</p>
+
+                        </label>
+
+                        <a href="#" class="forgot-password">
+                            Ai uitat parola?
+                        </a>
+
+                    </div>
+
+                    <a href="#" class="btn-hero" id="login-submit">Începe călătoria
+                        <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.15 13H5C4.71667 13 4.47934 12.904 4.288 12.712C4.09667 12.52 4.00067 12.2827 4 12C3.99934 11.7174 4.09534 11.48 4.288 11.288C4.48067 11.096 4.718 11 5 11H16.15L13.3 8.15002C13.1 7.95002 13.004 7.71669 13.012 7.45002C13.02 7.18336 13.116 6.95002 13.3 6.75002C13.5 6.55002 13.7377 6.44602 14.013 6.43802C14.2883 6.43002 14.5257 6.52569 14.725 6.72502L19.3 11.3C19.4 11.4 19.471 11.5084 19.513 11.625C19.555 11.7417 19.5757 11.8667 19.575 12C19.5743 12.1334 19.5537 12.2584 19.513 12.375C19.4723 12.4917 19.4013 12.6 19.3 12.7L14.725 17.275C14.525 17.475 14.2877 17.571 14.013 17.563C13.7383 17.555 13.5007 17.4507 13.3 17.25C13.1167 17.05 13.0207 16.8167 13.012 16.55C13.0033 16.2834 13.0993 16.05 13.3 15.85L16.15 13Z"
+                                fill="currentColor" />
+                        </svg></a>
+
+                </form>
+
+                <div class="or-divider">
+
+                    <div class="line"></div>
+
+                    <span>SAU</span>
+
+                    <div class="line"></div>
+
+                </div>
+
+                <button class="google-btn">
+
+                    <img src="./Assets/Icons/google.png" alt="">
+
+                    CONTINUĂ CU GOOGLE
+
+                </button>
+
+                <div class="signup-link">
+
+                    <p class="account">Nu ai cont?</p>
+
+                    <a href="./register.html">
+                        Creează cont
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+
+                <div class="footer-brand">
+
+                    <img class="footer-logo" src="./Assets/Logo/Light_Logo.png" alt="Motrix Logo">
+
+                    <p class="footer-tagline">
+                        <span>Piese auto</span> PREMIUM ȘI PERFORMANȚĂ
+                    </p>
+
+                    <div class="footer-socials">
+
+                        <a href="#" class="social-btn">
+                            <img src="./Assets/Icons/tiktok.png" alt="">
+                        </a>
+
+                        <a href="#" class="social-btn">
+                            <img src="./Assets/Icons/youtube.png" alt="">
+                        </a>
+
+                        <a href="#" class="social-btn">
+                            <img src="./Assets/Icons/instagram.png" alt="">
+                        </a>
+
+                        <a href="#" class="social-btn">
+                            <img src="./Assets/Icons/telegram.png" alt="">
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>MENIU</h4>
+
+                    <ul>
+                        <li><a href="#">Acasă</a></li>
+                        <li><a href="#">Produse</a></li>
+                        <li><a href="#">Despre noi</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                </div>
+
+
+
+                <div class="footer-column">
+
+                    <h4>SERVICIU CLIENȚI</h4>
+
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Livrare</a></li>
+                        <li><a href="#">Returnări</a></li>
+                        <li><a href="#">Urmărește comanda</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>INFORMAȚII</h4>
+
+                    <ul>
+                        <li><a href="#">Politica de confidențialitate</a></li>
+                        <li><a href="#">Termeni și condiții</a></li>
+                        <li><a href="#">Politica de returnare</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h4>CONTACTEAZĂ-NE</h4>
+
+                    <ul>
+                        <li>Moldova, Chișinău</li>
+                        <li>+373(69)-30-22-43</li>
+                        <li>support@motrix.md</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 MOTRIX. Toate drepturile rezervate.
+                    |
+                    <a href="#">Politica de confidențialitate</a>
+                    |
+                    <a href="#">Termeni și condiții</a>
+                    |
+                    <a href="#">Cookie-uri</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <div id="toast" class="toast show hidden">
+        <div class="toast-icon">✓</div>
+        <div class="toast-content">
+            <p class="toast-title">Succes</p>
+            <p class="toast-message">Produsul a fost adăugat în coș.</p>
+        </div>
+    </div>
+
+    <div class="toast toast-error hidden">
+        <div class="toast-icon">✕</div>
+        <div class="toast-content">
+            <p class="toast-title">Eroare</p>
+            <p class="toast-message">Acest produs nu este disponibil momentan.</p>
+        </div>
+    </div>
+<script src="./js/products-data.js"></script>
+<script src="./js/toast-system.js"></script>
+<script src="./js/product-manager.js"></script>
+<script src="./js/render-products.js"></script>
+<script src="./js/cart-manager.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/auth-page.js"></script>
+</body>
+
+</html>
